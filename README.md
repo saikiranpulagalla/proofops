@@ -6,10 +6,19 @@ ProofOps is a reliability layer for autonomous agents that prevents an attempted
 
 **AI proposes. Deterministic systems authorize, execute, verify, and prove.**
 
+## Judge Demo Access
+
+- **Live Demo:** [Open the live ProofOps demo](https://proofops-api-production.up.railway.app)
+- **Demo Video:** [Watch the 3-minute demo](https://youtu.be/erF3Gq2RgEg)
+- **GitHub:** [saikiranpulagalla/proofops](https://github.com/saikiranpulagalla/proofops)
+- **Demo Password:** Provided in the hackathon submission and demo video description
+
+> The deployment uses synthetic evaluation data. Judges can sign in and inspect the existing run and its evidence/audit timeline without triggering new provider actions.
+>
+> Recommended evaluation path: inspect the existing deployed run rather than creating repeated live runs.
+
 | | |
 | --- | --- |
-| Live demo | [proofops-api-production.up.railway.app](https://proofops-api-production.up.railway.app) |
-| Source | [github.com/saikiranpulagalla/proofops](https://github.com/saikiranpulagalla/proofops) |
 | Hackathon | AI Build Challenge 2026 by Build Fast with AI |
 | Track | PS-01 — Autonomous Agents for Everyday Apps |
 | Candidate | RC11 (`1.0.0rc11`) |
