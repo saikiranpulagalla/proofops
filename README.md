@@ -51,7 +51,7 @@ The design centers trusted business evidence, typed proposals, deterministic val
 
 ## 60-second judge path
 
-1. Open the [live demo](https://proofops-api-production.up.railway.app) and sign in with the test credentials supplied in the submission.
+1. Open the [live demo](https://proofops-api-production.up.railway.app) and sign in with the temporary hackathon demo password shown above.
 2. Inspect the synthetic renewal run and its timeline.
 3. Observe the safe path `CREATED → RESOLVING → BLOCKED_NEEDS_HUMAN`: ProofOps refuses to manufacture a consequential action when it cannot safely proceed.
 4. Review the Gmail response-loss evidence below: `UNKNOWN` was observed, reconciliation recovered the one committed message, and no resend occurred.
@@ -326,13 +326,15 @@ ProofOps was built using multiple AI systems with separated responsibilities:
 
 | Tool / Model | Role |
 | --- | --- |
-| GPT-5.6 Sol | Senior orchestration, architecture reasoning, debugging strategy, release planning, technical writing, and cross-checking |
-| Astra | Web-assisted orchestration, external research, challenge/submission verification, and supporting review |
+| Astra | Senior orchestration, architecture reasoning, debugging strategy, release planning, technical writing, and cross-checking |
+| GPT-5.6 Sol | Web-assisted orchestration, external research, hackathon/submission verification, technical review, and supporting analysis |
 | Codex Terra | Primary implementation work: repository changes, code-level fixes, test execution, release preparation, and documentation updates |
 | Codex Astra | Independent audits, adversarial review, regression hunting, failure-mode analysis, and release-readiness checks |
 | Google Gemini | Product runtime AI: structured planning proposals inside ProofOps |
 
-Development AI tools helped build, review, test, and document ProofOps. They are not part of the protected execution authority in the running product. At runtime, Gemini proposes structured plans while deterministic ProofOps code controls protected actions.
+Development AI tools helped build, review, test, and document ProofOps. They are not part of the protected execution authority in the running product.
+
+At runtime, Google Gemini proposes structured plans, while deterministic ProofOps code retains authority over identity, business-state validation, policy, human approval, execution, reconciliation, and verified completion.
 
 ## Current limitations
 
