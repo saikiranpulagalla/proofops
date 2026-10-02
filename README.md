@@ -13,6 +13,8 @@ ProofOps is a reliability layer for autonomous agents that prevents an attempted
 - **GitHub:** [saikiranpulagalla/proofops](https://github.com/saikiranpulagalla/proofops)
 - **Demo Password:**  jKES-ZXvyyT84oEFz7P4o6WlmLubFizV
 
+> This is a temporary public hackathon demo credential for synthetic evaluation data only. It will be removed or rotated after the hackathon evaluation period.
+>
 > The deployment uses synthetic evaluation data. Judges can sign in and inspect the existing run and its evidence/audit timeline without triggering new provider actions.
 >
 > Recommended evaluation path: inspect the existing deployed run rather than creating repeated live runs.
@@ -24,7 +26,7 @@ ProofOps is a reliability layer for autonomous agents that prevents an attempted
 | Candidate | RC11 (`1.0.0rc11`) |
 | Deterministic suite | **402 / 402 PASS** for the frozen RC11 run |
 
-The live UI requires credentials supplied separately with the hackathon submission. It uses synthetic qualification data; please do not trigger repeated consequential actions during evaluation.
+The live UI uses the temporary hackathon demo credential referenced above and operates only on synthetic evaluation data. Please inspect the existing run rather than creating repeated consequential actions during evaluation.
 
 ## The problem
 
@@ -314,11 +316,23 @@ The live Gemini qualification gate was attempted against the deployed RC11 model
 
 ### Product runtime AI
 
-ProofOps uses the Google Gen AI SDK (`google-genai`) and its Interactions API for structured planning proposals. The checked-in runtime default is `gemini-3.8-flash`, configurable through `PROOFOPS_GEMINI_MODEL`. Gemini supplies a typed proposal only; deterministic code retains authorization, execution, and verification authority.
+ProofOps uses the Google Gen AI SDK (`google-genai`) and its Interactions API for structured planning proposals. The model is configured through `PROOFOPS_GEMINI_MODEL`: the checked-in source fallback is `gemini-3.8-flash`, while deployment configuration may override it. The current RC11 hackathon deployment was configured with `gemini-3.7-flash`.
 
-### Development tools
+Gemini supplies a typed planning proposal only. Deterministic ProofOps code retains authority over identity, business-state validation, policy, approval, execution, reconciliation, and verified completion.
 
-This repository does not make a separate development-AI attribution claim. The runtime AI integration above is the documented product dependency.
+### Development and orchestration AI
+
+ProofOps was built using multiple AI systems with separated responsibilities:
+
+| Tool / Model | Role |
+| --- | --- |
+| GPT-5.6 Sol | Senior orchestration, architecture reasoning, debugging strategy, release planning, technical writing, and cross-checking |
+| Astra | Web-assisted orchestration, external research, challenge/submission verification, and supporting review |
+| Codex Terra | Primary implementation work: repository changes, code-level fixes, test execution, release preparation, and documentation updates |
+| Codex Astra | Independent audits, adversarial review, regression hunting, failure-mode analysis, and release-readiness checks |
+| Google Gemini | Product runtime AI: structured planning proposals inside ProofOps |
+
+Development AI tools helped build, review, test, and document ProofOps. They are not part of the protected execution authority in the running product. At runtime, Gemini proposes structured plans while deterministic ProofOps code controls protected actions.
 
 ## Current limitations
 
