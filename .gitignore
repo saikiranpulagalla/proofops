@@ -3,6 +3,7 @@ __pycache__/
 *.pyc
 *.pyo
 *.py[cod]
+*.egg-info/
 *.sqlite
 *.db
 .env
@@ -28,3 +29,4 @@ Thumbs.db
 google-token.json
 *token*.json
 *credentials*.json
+/rc11-full.xml
