@@ -11,7 +11,7 @@ ProofOps is a reliability layer for autonomous agents that prevents an attempted
 - **Live Demo:** [Open the live ProofOps demo](https://proofops-api-production.up.railway.app)
 - **Demo Video:** [Watch the 3-minute demo](https://youtu.be/erF3Gq2RgEg)
 - **GitHub:** [saikiranpulagalla/proofops](https://github.com/saikiranpulagalla/proofops)
-- **Demo Password:** Provided in the hackathon submission and demo video description
+- **Demo Password:**  jKES-ZXvyyT84oEFz7P4o6WlmLubFizV
 
 > The deployment uses synthetic evaluation data. Judges can sign in and inspect the existing run and its evidence/audit timeline without triggering new provider actions.
 >
