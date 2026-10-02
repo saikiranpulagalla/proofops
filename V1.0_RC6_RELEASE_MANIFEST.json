@@ -1,0 +1,27 @@
+{
+  "alembic_head": "0010",
+  "automated_tests": {
+    "passed": 348,
+    "total": 348
+  },
+  "deployment_restart_proof": "shared PostgreSQL deployment generation must advance",
+  "final_promotion_signature": "Ed25519 with externally pinned public key",
+  "live_gates": {
+    "gemini_semantic_and_containment": "PENDING",
+    "gmail_transport_and_business_evidence": "PENDING",
+    "google_sheets_synthetic": "PENDING",
+    "postgresql_schema_and_concurrency": "PENDING",
+    "real_provider_end_to_end_restart_repeat": "PENDING"
+  },
+  "package_version": "1.0.0rc6",
+  "promotion_status": "NOT_READY_UNTIL_LIVE_GATES_PASS",
+  "qualification": "offline-qualified",
+  "rc6_targeted_hardening_suite": {
+    "passed": 13,
+    "total": 13
+  },
+  "release_label": "V1.0.0-rc6",
+  "release_source_sha256": "cbd2c9c73429a0749c2743fcde86426cc23d2c6527d916934a88a2fd75c9aff8",
+  "release_stage": "release-candidate",
+  "runtime_payload_sha256": "12ee72e6a728247ef54cda7728077cbc8c3392e201b7764bb5f623f3fb5cfb93"
+}

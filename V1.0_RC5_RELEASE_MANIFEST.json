@@ -1,0 +1,27 @@
+{
+  "alembic_head": "0009",
+  "automated_tests": {
+    "passed": 336,
+    "total": 336
+  },
+  "deployment_artifact_proof": "external SHA-256 attestation command",
+  "deployment_restart_proof": "boot_id must change",
+  "final_promotion_signature": "Ed25519 with externally pinned public key",
+  "live_gates": {
+    "gemini_semantic_and_containment": "PENDING",
+    "gmail_transport_and_business_evidence": "PENDING",
+    "google_sheets_synthetic": "PENDING",
+    "postgresql_schema_and_concurrency": "PENDING",
+    "real_provider_end_to_end_restart_repeat": "PENDING"
+  },
+  "package_version": "1.0.0rc5",
+  "promotion_status": "NOT_READY_UNTIL_LIVE_GATES_PASS",
+  "qualification": "offline-qualified",
+  "rc5_targeted_hardening_suite": {
+    "passed": 11,
+    "total": 11
+  },
+  "release_label": "V1.0.0-rc5",
+  "release_stage": "release-candidate",
+  "source_tree_sha256": "94d3189bdbcf277e82284227001b8ea5af7a08bd9919171eaa451db81a2bb392"
+}

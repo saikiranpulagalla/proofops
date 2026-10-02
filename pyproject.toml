@@ -1,0 +1,52 @@
+[build-system]
+requires = ["setuptools>=75", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "proofops"
+version = "1.0.0rc11"
+description = "Verified autonomous operations agent safety kernel"
+requires-python = ">=3.12"
+dependencies = [
+  "fastapi>=0.128,<1",
+  "pydantic>=2.13,<3",
+  "sqlalchemy>=2.0,<3",
+  "alembic>=1.18,<2",
+  "uvicorn>=0.35,<1",
+]
+
+[project.optional-dependencies]
+deploy = [
+  "psycopg[binary]>=3.2,<4",
+]
+ai = [
+  "google-genai==2.25.0",
+]
+google = [
+  "google-api-python-client>=2,<3",
+  "google-auth>=2,<3",
+  "google-auth-oauthlib>=1,<2",
+]
+release = [
+  "psycopg[binary]>=3.2,<4",
+  "google-genai==2.25.0",
+  "google-api-python-client>=2,<3",
+  "google-auth>=2,<3",
+  "google-auth-oauthlib>=1,<2",
+  "cryptography>=46,<47",
+]
+dev = [
+  "pytest>=9,<10",
+  "pytest-asyncio>=1,<2",
+  "httpx>=0.28,<1",
+  "hypothesis>=6.0,<7",
+  "cryptography>=46,<47",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["app*"]

@@ -1,0 +1,27 @@
+{
+  "alembic_head": "0012",
+  "automated_tests": {
+    "passed": 390,
+    "total": 390
+  },
+  "deployment_restart_proof": "externally supplied immutable deployment revision must change; worker generation is diagnostic-only",
+  "final_promotion_signature": "Ed25519 with externally pinned public key",
+  "live_gates": {
+    "deployed_e2e": "PENDING",
+    "gemini": "PENDING",
+    "gmail": "PENDING",
+    "postgresql": "PENDING",
+    "sheets": "PENDING"
+  },
+  "package_version": "1.0.0rc10",
+  "promotion_status": "NOT_READY_UNTIL_LIVE_GATES_PASS",
+  "qualification": "offline-qualified; require-live validates a complete signed five-gate receipt bundle",
+  "rc9_gmail_reconciliation_suite": {
+    "passed": 7,
+    "total": 7
+  },
+  "release_label": "V1.0.0-rc10",
+  "release_source_sha256": "see release_identity.json after final RC10 freeze",
+  "release_stage": "release-candidate",
+  "runtime_payload_sha256": "see release_identity.json after final RC10 freeze"
+}

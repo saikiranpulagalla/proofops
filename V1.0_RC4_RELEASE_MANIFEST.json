@@ -1,0 +1,20 @@
+{
+  "release_label": "V1.0.0-rc4",
+  "package_version": "1.0.0rc4",
+  "release_stage": "release-candidate",
+  "qualification": "offline-qualified",
+  "alembic_head": "0008",
+  "automated_tests": {"passed": 325, "total": 325},
+  "rc2_release_kill_suite": {"passed": 30, "total": 30},
+  "rc4_targeted_hardening_suite": {"passed": 11, "total": 11},
+  "source_tree_sha256": "781997e9e8e279c9a07d745f5b8695564f0918ce8157a53e36964ffb9c38f993",
+  "live_gates": {
+    "postgresql_schema_and_concurrency": "PENDING",
+    "google_sheets_synthetic": "PENDING",
+    "gmail_transport_and_business_evidence": "PENDING",
+    "gemini_semantic_and_containment": "PENDING",
+    "real_provider_end_to_end_restart_repeat": "PENDING"
+  },
+  "promotion_status": "NOT_READY_UNTIL_LIVE_GATES_PASS",
+  "final_promotion_signature": "Ed25519 with externally pinned public key"
+}
